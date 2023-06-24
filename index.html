@@ -58,14 +58,17 @@
     </div>
     <div>
       <span class="prompt">C:\></span>
-      <span class="input" id="para">bootstrap\javascript\python\nodejs</span>
+      <span class="input" id="para">Bitcoin Core\LND\Blockchair\Python</span>
       <br>
       <br>
       <span class="output">Available Commands:</span>
       <ul>
         <li><span class="link" id="about">verifytx</span></li>
         <li><span class="link" id="projects">bitcoinTerminal</span></li>
-        <li><span class="link" id="contact">nakedAddress</span></li>
+        <li><span class="link" id="contact">excelWallet</span></li>
+        <li><span class="link" id="janeGPT">janeGPT</span></li>
+        <li><a class="link" id="github" href="https://github.com/normaescobar" target="_blank">Github</a></li>
+        <li><a class="link" id="email" href="mailto:nescobar@krpgroup.com" target="_blank">Contact</a></li>
       </ul>
     </div>
 
@@ -74,6 +77,7 @@
     const aboutLink = document.getElementById("about");
     const projectsLink = document.getElementById("projects");
     const contactLink = document.getElementById("contact");
+    const janeGPTLink = document.getElementById("janeGPT");
     const title = document.getElementById("title");
     const subtitle = document.getElementById("subtitle");
     const para = document.getElementById("para");
@@ -82,7 +86,7 @@
       setActiveLink(aboutLink);
       title.textContent = "Verifytx is a Python package designed for institutional-level volume verification of cryptocurrency transactions records in Excel.";
       subtitle.textContent = "Async library update complete, making it 10x faster.";
-      para.textContent = "pip install verifytx";
+      para.textContent = "pip installverifytx";
     });
 
     projectsLink.addEventListener("click", () => {
@@ -94,9 +98,16 @@
 
     contactLink.addEventListener("click", () => {
       setActiveLink(contactLink);
-      title.textContent = "nakedAddress is a program that retrieves historical wallet activity from the most popular blockchains, allowing custom date ranges and organizing the data directly into Excel.";
+      title.textContent = "excelWallet is a program that retrieves historical wallet activity from the most popular blockchains, allowing custom date ranges and organizing the data directly into Excel.";
       subtitle.textContent = "1,000,000 requests per day limit.";
-      para.textContent = "nakedAddress is an open source project available in my github @normaescobar.";
+      para.textContent = "excelWallet is an open source project available in my github @normaescobar.";
+    });
+
+    janeGPTLink.addEventListener("click", () => {
+      setActiveLink(janeGPTLink);
+      title.textContent = "janeGPT is a chatbot powered by GPT-4 and LangChain that can ingest any type of PDF file (financial data, textbooks) and allow its users to 'chat' with their docs.";
+      subtitle.textContent = "Pinecone Hackathon: Jumpstart Real-World AI Applications project contestant.";
+      para.textContent = "https://jane-gpt-nine.vercel.app/";
     });
 
     function setActiveLink(link) {
