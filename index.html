@@ -2,149 +2,124 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Norma's Work Terminal</title>
+    <title>E-Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="icon" type="image/x-icon" href="/command-line-icon.png">
 </head>
 <body>
-   <style>
-    body {
-      background-color: #1E1E1E;
-      color: #00FF00;
-      font-family: Consolas, monospace;
-      font-size: 16px;
-      line-height: 1.5;
-      margin: 0;
-      padding: 0;
-    }
-    .terminal {
-      display: flex;
-      flex-direction: column;
-      height: 100vh;
-      justify-content: flex-start;
-      padding: 20px;
-      position: absolute;
-      top: 0;
-      left: 0;
-    }
-    .prompt {
-      color: #FFD700;
-    }
-    .input {
-      color: #00FF00;
-    }
-    .output { 
-      color: #FFFFFF;
-    }
-    .link {
-      color: #9400D3;
-      cursor: pointer;
-      text-decoration: none;
-    }
-    .active {
-      color: #00FF00;
-    }
-    .profile-pic {
-      border-radius: 50%;
-      max-width: 100px;
-      max-height: 100px;
-    }
-   </style> 
+    <div id="container">
+        <div id="left">
+            <h2>Index</h2>
+            <ul>
+                <li><a href="https://mempool-terminal.com" target="_blank">Mempool Terminal</a></li>
+                <!-- Add more article links as needed -->
+            </ul>
+        </div>
+        
+        
+
+        <div id="center">
+            <div id="avatar">
+                <img src="assets/pp.jpg" alt="Norma Escobar's Profile Picture">
+            </div>
+            <h1 class="name">Norma Escobar</h1>
+            <a class="tag" href="https://github.com/madame-president" target="_blank">@madamepresident</a>
+            <p>
+                My interpretations and aspirations of the world. Developer with a focus in Bitcoin and pubic practice.
+            </p>
+            <hr> <!-- Horizontal Line -->
+            <h2>Updates</h2>
+            <div class="article-container">
+                <div class="article-image">
+                    <img src="assets/pp.jpg" alt="Repo-img">
+                </div>
+                <div class="article-content">
+                    <h3>Initial Research Offering <span class="article-hashtag">#icebox</span></h3>
+                    <p>Thinking of creating a new process of raising capital that I'll call "Initial Research Offering".</p>
+                    <!-- <hr> -->
+                </div>
+            </div>
+
+            <div class="article-container">
+                <div class="article-image">
+                    <img src="assets/pp.jpg" alt="Repo-img">
+                </div>
+                <div class="article-content">
+                    <h3>OpenAPI Specification <span class="article-hashtag">#backlog</span></h3>
+                    <p>Created my first GPT "Bitcoin API". Not happy with performance fetching historical data. </p>
+                    <!-- <hr> -->
+                </div>
+            </div>
+
+            <div class="article-container">
+                <div class="article-image">
+                    <img src="assets/pp.jpg" alt="Repo-img">
+                </div>
+                <div class="article-content">
+                    <h3>ACL Surgery<span class="article-hashtag">#me</span></h3>
+                    <p>My new results came back. Complete ACL tear. Suspected lateral meniscus tears. Subtle impaction injuries of the lateral
+                        femoral condyle and posterior tibia with residual bone contusion. 
+                    </p>
+                    <!-- <hr> -->
+                </div>
+            </div>
+
+            <div class="article-container">
+                <div class="article-image">
+                    <a href="https://mempool-terminal.com" target="_blank"><img src="assets/repositories/devy-logo.png" alt="Repo-img"></a>
+                </div>
+                <div class="article-content">
+                    <h3><a href="https://mempool-terminal.com" target="_blank">I created a new program!</a> <span class="article-hashtag">#bitcoin</span></h3>
+                    <p>Mempool Terminal is a desktop application that generates verified bitcoin wallet statements. Still working on executable file.</p>
+                    <!-- <hr> -->
+                </div>
+            </div>
+
+        </div>
+        
+
+        <div id="right">
+            <div class="container" id="projects-container">
+                <h2>Repositories</h2>
+
+                <div class="article-container">
+                    <div class="article-image">
+                        <a href="https://mempool-terminal.com" target="_blank"><img src="assets/repositories/devy-logo.png" alt="Repo-img"></a>
+                    </div>
+                    <div class="article-content">
+                        <h3><a href="https://mempool-terminal.com" target="_blank">Mempool Terminal</a> <span class="article-hashtag">#bitcoin</span></h3>
+                        <p>Desktop application that generates verified bitcoin wallet statements</p>
+                        <!-- <hr> -->
+                    </div>
+                </div>
+
+                <div class="article-container">
+                    <div class="article-image">
+                        <a href="https://docs.google.com/spreadsheets/d/1tqr1XDywT_wR9LkTGof4_N1YTS3HqkwfnpAO-MK2PUA/edit#gid=1755190275" target="_blank"><img src="assets/repositories/bsa-logo.webp" alt="Repo-img"></a>
+                    </div>
+                    <div class="article-content">
+                        <h3><a href="https://docs.google.com/spreadsheets/d/1tqr1XDywT_wR9LkTGof4_N1YTS3HqkwfnpAO-MK2PUA/edit#gid=1755190275" target="_blank">Bitcoin Savings Account</a> <span class="article-hashtag">#bitcoin</span></h3>
+                        <p>An experiment to measure the unrealized gain or loss of buying $250 worth of bitcoin every Friday</p>
+                        <!-- <hr> -->
+                    </div>
+                </div>
+                
+                <!--<div class="project-description">
+                    <div class="project-image">
+                        <img src="assets/projects/pp.jpg" alt="Project 1">
+                    </div>
+                    <h4><a href="https://docs.google.com/spreadsheets/d/1tqr1XDywT_wR9LkTGof4_N1YTS3HqkwfnpAO-MK2PUA/edit#gid=1755190275" target="_blank">Bitcoin Savings Account</a></h4>
+                </div>
+            </div>
+                        
+            <div class="container" id="updates-container">
+                <h2>Updates</h2>
+                <p>Thinking of creating a new process of raising capital that I'll call <strong>Initial Research Offering</strong>.</p>
+            </div>-->
+        </div>
+        
+    </div>
 </body>
-<div class="terminal">
-    <div>
-      <span class="prompt">C:\></span>
-      <span class="input" id="title">Norma's e-Portfolio</span>
-    </div>
-    <div>
-      <span class="prompt">C:\></span>
-      <span class="input" id="subtitle">Senior Blockchain Developer</span>
-    </div>
-    <div>
-      <span class="prompt">C:\></span>
-      <span class="input" id="para">Bitcoin Core\LND\Blockchair\Python</span>
-    </div>
-    <br>
-    <br>
-    <img class="profile-pic" src="pp.jpg" alt="Profile Picture">
-    <br>
-    <br>
-    <span class="output">Available Commands:</span>
-    <ul>
-        <li><span class="link" id="about">verifytx</span></li>
-        <li><span class="link" id="projects">bitcoinTerminal</span></li>
-        <li><span class="link" id="contact">excelWallet</span></li>
-        <li><span class="link" id="janeGPT">janeGPT</span></li>
-        <li><a class="link" id="github" href="https://github.com/normaescobar" target="_blank">Github</a></li>
-        <li><a class="link" id="email" href="mailto:nescobar@krpgroup.com" target="_blank">Contact</a></li>
-        <li><span class="link" id="aboutMe">About</span></li>
-        <li><span class="link" id="reboot">reboot terminal</span></li> 
-    </ul>
-</div>
-  <script>
-    const aboutLink = document.getElementById("about");
-    const projectsLink = document.getElementById("projects");
-    const contactLink = document.getElementById("contact");
-    const janeGPTLink = document.getElementById("janeGPT");
-    const rebootLink = document.getElementById("reboot");
-    const aboutMeLink = document.getElementById("aboutMe");
-    const title = document.getElementById("title");
-    const subtitle = document.getElementById("subtitle");
-    const para = document.getElementById("para");
-
-    aboutLink.addEventListener("click", () => {
-      setActiveLink(aboutLink);
-      title.textContent = "Verifytx is a Python package designed for institutional-level volume verification of cryptocurrency transactions records in Excel.";
-      subtitle.textContent = "Async library update complete, making it 10x faster.";
-      para.textContent = "pip install verifytx";
-    });
-
-    projectsLink.addEventListener("click", () => {
-      setActiveLink(projectsLink);
-      title.textContent = "bitcoinTerminal is a program that allows users to query the Bitcoin blockchain using Excel-like formulas, accessing a Bitcoin node hosted on AWS, with a user interface resembling the Bloomberg Terminal.";
-      subtitle.textContent = "This program takes most of my time since I manage the infrastructure on AWS myself.";
-      para.textContent = "bitcoinTerminal is a close sourced project atm.";
-    });
-
-    contactLink.addEventListener("click", () => {
-      setActiveLink(contactLink);
-      title.textContent = "excelWallet is a program that retrieves historical wallet activity from the most popular blockchains, allowing custom date ranges and organizing the data directly into Excel.";
-      subtitle.textContent = "1,000,000 requests per day limit.";
-      para.textContent = "excelWallet is an open source project available in my github @normaescobar.";
-    });
-
-    janeGPTLink.addEventListener("click", () => {
-      setActiveLink(janeGPTLink);
-      title.textContent = "janeGPT is a chatbot powered by GPT-4 and LangChain that can ingest any type of PDF file (financial data, textbooks) and allow its users to 'chat' with their docs.";
-      subtitle.textContent = "Pinecone Hackathon: Jumpstart Real-World AI Applications project contestant.";
-      para.textContent = "https://jane-gpt-nine.vercel.app/";
-    });
-
-    rebootLink.addEventListener("click", () => {
-      setActiveLink(rebootLink);
-      title.textContent = "Norma's e-Portfolio";
-      subtitle.textContent = "Senior Blockchain Developer";
-      para.textContent = "Bitcoin Core\\LND\\Blockchair\\Python";
-    });
-
-    aboutMeLink.addEventListener("click", () => {
-      setActiveLink(aboutMeLink);
-      title.textContent = "My favourite food is a steak.";
-      subtitle.textContent = "I am pretty passionate about football and know my way around the field.";
-      para.textContent = "I do not read fiction, yet my favourite book is 'The Mandibles' by Lionel Shriver. I'm always down for an interesting conversation.";
-      para.textContent = "Always down for an interesting conversation and meeting cool people!";  
-    });
-
-    function setActiveLink(link) {
-      const links = document.querySelectorAll(".link");
-      links.forEach((l) => {
-        if (l === link) {
-          l.classList.add("active");
-        } else {
-          l.classList.remove("active");
-        }
-      });
-    }
-  </script>
 </html>
