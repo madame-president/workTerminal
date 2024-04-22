@@ -1,8 +1,6 @@
 body, html {
     margin: 0;
     padding: 0;
-    width: 100%;
-    height: 100%;
     font-family: 'Rubik', sans-serif;
     color: #FFF;
     background-color: #242424;
@@ -14,8 +12,8 @@ h1, h2, h3, h4, h5, h6 {
 
 #container {
     display: flex;
-    height: 100%;
-}
+    min-height: 100vh;
+} 
 
 #left, #center, #right {
     padding: 20px;
@@ -100,24 +98,24 @@ li {
 }
 
 
-.article-container {
+.updates-container {
     display: flex;
     align-items: center;
     margin-bottom: 40px;
 }
 
-.article-image img {
-    width: 60px;
-    height: 60px;
+.update-image img {
+    width: 50px;
+    height: 50px;
     border-radius: 50%;
     margin-right: 15px;
 }
 
-.article-content {
+.update-content {
     flex-grow: 1;
 }
 
-.article-content h3 {
+.update-content h3 {
     margin-top: 0;
     margin-bottom: 5px;
     font-size: 1.2em;
@@ -126,23 +124,23 @@ li {
     justify-content: space-between;
 }
 
-.article-content a{
+.update-content a{
     color: #FFD700;
     text-decoration: none;
     transition: color 500ms ease-in-out;
 }
 
-.article-content a:hover{
+.update-content a:hover{
     color: #00FF00;
     text-decoration: underline;
 }
 
-.article-hashtag {
+.hashtag {
     font-size: 0.7em;
     color: #00FF00;
 }
 
-.article-content p {
+.update-content p {
     margin-top: 0;
 }
 
@@ -154,9 +152,50 @@ li {
     flex-direction: column;
 }
 
+.projects-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.project-image img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+.project-content {
+    flex-grow: 1;
+}
+
+.project-content h3 {
+    margin-top: 0;
+    margin-bottom: 5px;
+    font-size: 1.2em;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.project-content p {
+    margin-top: 0;
+}
+
+.project-content a{
+    color: #FFD700;
+    text-decoration: none;
+    transition: color 500ms ease-in-out;
+}
+
+.project-content a:hover{
+    color: #00FF00;
+    text-decoration: underline;
+}
+
 /*#projects-container {
     flex: 0 0 30%;
-}*/
+} # In case I decide to split the right section
 
 .project-description {
     display: flex;
@@ -185,53 +224,7 @@ li {
 .project-description a:hover {
     color: #00FF00;
     text-decoration: underline;
-}
-
-
-
-#updates-container {
-    flex: 1;
-}
-
-#updates-container p {
-    margin-top: 0;
-}
-
-
-/* Article Page */
-
-.article-page-container {
-    font-family: 'Rubik', sans-serif;
-    color: #FFF;
-    background-color: #242424;
-    padding: 20px;
-}
-
-.article-header {
-    max-width: 100%;
-    border-radius: 10px;
-    margin-bottom: 20px;
-}
-
-.article-header img {
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    margin-right: 15px;
-}
-
-.article-header h1 {
-    color: #FFD700;
-}
-
-.article-header p {
-    font-size: 1em;
-}
-
-.article-body p {
-    margin-bottom: 15px;
-    line-height: 1.6;
-}
+}*/
 
 
 /* Media query for screens with a width of 820px or less */
@@ -245,5 +238,3 @@ li {
         width: 100%;
     }
 }
-
-
