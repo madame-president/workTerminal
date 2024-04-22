@@ -123,6 +123,10 @@ li {
     justify-content: space-between;
 }
 
+.update-content p {
+    margin-top: 0;
+}
+
 .update-content a{
     color: #FFD700;
     text-decoration: none;
@@ -139,22 +143,12 @@ li {
     color: #00FF00;
 }
 
-.update-content p {
-    margin-top: 0;
-}
-
 
 /* Right */
 
 #right .container {
     display: flex;
     flex-direction: column;
-}
-
-.projects-container {
-    display: flex;
-    align-items: center;
-    margin-bottom: 40px;
 }
 
 .project-image img {
@@ -164,66 +158,6 @@ li {
     margin-right: 15px;
 }
 
-.project-content {
-    flex-grow: 1;
-}
-
-.project-content h3 {
-    margin-top: 0;
-    margin-bottom: 5px;
-    font-size: 1.2em;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.project-content p {
-    margin-top: 0;
-}
-
-.project-content a{
-    color: #FFD700;
-    text-decoration: none;
-    transition: color 500ms ease-in-out;
-}
-
-.project-content a:hover{
-    color: #00FF00;
-    text-decoration: underline;
-}
-
-/*#projects-container {
-    flex: 0 0 30%;
-} # In case I decide to split the right section
-
-.project-description {
-    display: flex;
-    align-items: center;
-    margin-bottom: 15px;
-}
-
-.project-image img {
-    width: 50px; 
-    height: 50px; 
-    border-radius: 50%; 
-    margin-right: 10px;
-}
-
-.project-description h4 {
-    margin: 0;
-    flex-grow: 1;
-}
-
-.project-description h4 a {
-    color: inherit;
-    text-decoration: none;
-    transition: color 500ms ease;
-}
-
-.project-description a:hover {
-    color: #00FF00;
-    text-decoration: underline;
-}*/
 
 
 /* Media query for screens with a width of 820px or less */
